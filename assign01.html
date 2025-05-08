@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML</title>
+    <style>
+        h1 {
+            font-family:helvetica;
+            font-size: 38px;
+            text-align:center;
+        }
+        .profile_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile_photo {
+            border-radius: 50%;
+        }
+        p {
+            font-family:helvetica;
+            font-size: 21px;
+            line-height: 1.4;
+        }
+        .prayer_container {
+            display: flex;
+            justify-content: center;
+            position:relative;
+        }
+
+        .prayer {
+            width: 400px;
+            height: 450px;
+            padding: 15px;
+            background-color:lightgrey;        
+        }
+        .stamp_container {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: -25px;
+            right: 60px;
+            display: flex;
+            justify-content: center;
+            z-index: 10;
+        }
+        .stamp_image  {
+            opacity: 0.4;
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>안녕하세요, 저는 조한진입니다!</h1>
+    <div class="profile_container">
+        <img class="profile_photo" src="./profile.jpg" alt="조한진의 프로필 사진" width="200">
+    </div>
+    <p align="center">프론트엔드 개발을 배우는 중입니다. <img src="./rocket.png" alt="Rocket" width="18"></p>
+    <div class="prayer_container">
+        <div class="prayer">
+        <p>
+            하늘에 계신 우리 아버지여<br>
+            이름이 거룩히 여김을 받으시오며<br>
+            나라가 임하옵시며<br>
+            뜻이 하늘에서 이루어진 것 같이<br>
+            땅에서도 이루어지이다.<br>
+            오늘날 우리에게 일용할 양식을 주시옵고<br>
+            우리가 우리에게 죄 지은 자를 사하여 준 것 같이<br>
+            우리의 죄를 사하여 주옵시고<br>
+            우리를 시험에 들게 하지 마옵시고<br>
+            다만 악에서 구하옵소서.<br>
+            대개 나라와 권세와 영광이<br>
+            아버지께 영원히 있사옵나이다.<br>
+            <br>
+            </p>
+        <p align="right">
+            아멘.<br>
+        </p>
+        </div>
+        <div class="stamp_container">
+            <img class="stamp_image" src="./stamp.png" alt="Stamp">
+        </div>    
+    </div>
+</body>
+</html>
